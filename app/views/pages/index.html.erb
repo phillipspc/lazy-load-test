@@ -3,4 +3,6 @@
 <br/>
 <br/>
 
-<%= react_component("HelloWorld", { greeting: "Hello from react-rails." }) %>
+<%= turbo_frame_tag "test", src: "/test" do %>
+  <div>Loading...</div>
+<% end %>
